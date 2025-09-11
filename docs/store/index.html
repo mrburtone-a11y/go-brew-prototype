@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Go Brew — Store Dashboard Prototype</title>
+<style>
+  :root{--brown:#4E342E;--cream:#FBF7F2;--green:#6FBF73;--orange:#FFA726;--text:#222;}
+  *{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;}
+  body{margin:0;background:var(--cream);color:var(--text);}
+  .app{max-width:768px;margin:0 auto;border:1px solid #ddd;min-height:100vh;background:#fff;}
+  header{padding:16px;background:var(--brown);color:#fff;display:flex;justify-content:space-between;align-items:center;}
+  .card{border:1px solid #eee;border-radius:10px;padding:12px;margin:12px;}
+  .tabs{display:flex;gap:8px;padding:0 12px;}
+  .tab{flex:1;padding:10px;border-radius:8px;border:1px solid #eee;text-align:center;background:#fafafa;cursor:pointer;}
+  .tab.active{border-color:var(--brown);color:var(--brown);font-weight:700;background:#fff;}
+  .btn{padding:10px 14px;border-radius:8px;border:none;background:var(--green);color:#083013;font-weight:700;cursor:pointer;}
+  .btn.warn{background:var(--orange);color:#4a2b00;}
+  input,select{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;margin-top:8px;}
+  .muted{color:#666;font-size:13px;}
+  .footer{padding:12px;text-align:center;border-top:1px solid #eee;color:#666;font-size:12px;}
+</style>
+</head>
+<body>
+  <div class="app">
+    <header><div style="display:flex;align-items:center;gap:12px;"><div style="width:44px;height:44px;border-radius:8px;background:#fff2;display:flex;align-items:center;justify-content:center;">GB</div><div style="font-weight:800;">Go Brew — Store Dashboard</div></div><div class="muted">Bean & Bite Café</div></header>
+
+    <!-- Login -->
+    <section id="login" class="card">
+      <h2>Staff Login</h2>
+      <input placeholder="Email">
+      <input placeholder="Password" type="password">
+      <button class="btn" style="margin-top:12px;" onclick="go('dashboard')">Login</button>
+    </section>
+
+    <!-- (orders, bookings, feedback, voucher tool — full block continues) -->
+    <!-- Again paste the full store code block I gave earlier -->
+  </div>
+</body>
+</html>
